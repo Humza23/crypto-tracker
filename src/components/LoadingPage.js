@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import '../loadingPage.css';
-import coinImage from '../images/bitcoinImg.png'
+import "../loadingPage.css";
+import coinImage from "../images/bitcoinImg.png";
 
 const LoadingPage = () => {
   return (
@@ -10,4 +10,4 @@ const LoadingPage = () => {
     </div>
   );
 };
-export default LoadingPage
+export default LoadingPage;
