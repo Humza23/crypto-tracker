@@ -251,3 +251,18 @@ img {
     border: none;
   }
 }
+
+// Error Page
+.error-container {
+  background-color: #ffcccc;
+  border: 2px solid #ff6666;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.error-message {
+  color: #ff3333;
+  font-size: 18px;
+  font-weight: bold;
+}
