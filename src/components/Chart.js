@@ -7,6 +7,7 @@ import {
   XAxis,
   YAxis,
   Tooltip,
+  ResponsiveContainer
 } from "recharts";
 
 const Chart = ({ sparklineData }) => {
@@ -27,13 +28,15 @@ const Chart = ({ sparklineData }) => {
     .filter((data) => data);
 
   return (
-    <LineChart width={1100} height={300} data={formattedData}>
-      <Line type="monotone" dataKey="value" stroke="#8884d8" />
-      <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-      <XAxis dataKey="date" interval={3} />
-      <YAxis />
-      <Tooltip />
-    </LineChart>
+    <ResponsiveContainer width="100%" height={300}>
+      <LineChart data={formattedData}>
+        <Line type="monotone" dataKey="value" stroke="#8884d8" />
+        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+        <XAxis dataKey="date" interval={3} />
+        <YAxis />
+        <Tooltip />
+      </LineChart>
+    </ResponsiveContainer>
   );
 };
 
